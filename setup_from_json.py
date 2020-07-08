@@ -1028,4 +1028,4 @@ if __name__ == "__main__":
         f.write(make_controlccd(json_data))
 
     write_list_images_tot(json_data) 
-    print('Mary Submit files saved and moved to /home/fstars/MARY4OZ/')
+    print('Mary Submit files saved')
