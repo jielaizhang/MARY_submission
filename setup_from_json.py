@@ -56,7 +56,7 @@ pro mastersystem
 field='%s'
 dates=['%s']
 seed='%s%s'
-last_mary_run = %s + 1
+last_mary_run = %s 
 ;FINISHED EDITING
 ;;;;;;;;;;;;;;;;;;;
 
@@ -89,7 +89,7 @@ RADCOINCIDENCE=1.5/3600.0
 ;;;Assuming that the numbers after the seed are in a sequence from 1 onward,
 ;;;Iterate through all of them.
 
-for k=last_mary_run, n_elements(lsmaryout) do begin
+for k=last_mary_run +1, n_elements(lsmaryout) do begin
 
 k1=string(k)
 sequencenumber=strcompress(seed+'_'+k1, /remove_all)
