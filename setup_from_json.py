@@ -56,7 +56,7 @@ pro mastersystem
 field='%s'
 dates=['%s']
 seed='%s%s'
-
+last_mary_run = %s + 1
 ;FINISHED EDITING
 ;;;;;;;;;;;;;;;;;;;
 
@@ -88,7 +88,7 @@ RADCOINCIDENCE=1.5/3600.0
 
 ;;;Assuming that the numbers after the seed are in a sequence from 1 onward,
 ;;;Iterate through all of them.
-last_mary_run = %s + 1
+
 for k=last_mary_run, n_elements(lsmaryout) do begin
 
 k1=string(k)
