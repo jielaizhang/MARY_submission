@@ -6,7 +6,8 @@ json_file = sys.argv[1]
 mary_path = "/home/fstars/MARY4OZ/"
 
 mary_run_save_path = "/fred/oz100/pipes/DWF_PIPE/JSONS/PAST_JOBS/"+ json_file+"/"
-
+print('The JSON used is ' + json_file)
+print('JSON file moved to: ' + mary_run_save_path)
 if not os.path.exists(mary_run_save_path):
     os.makedirs(mary_run_save_path, 0o755)
 else: 
